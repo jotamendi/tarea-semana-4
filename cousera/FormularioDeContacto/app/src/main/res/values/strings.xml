@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Formulario</string>
+    <string name="btnText">Siguiente</string>
+    <string name="t1_nom">Nombre Completo</string>
+    <string name="t2_tel">Telefono</string>
+    <string name="t3_mail">@Email</string>
+    <string name="t4_descrip">Descripcion de Contacto</string>
+    <string name="t5_fn">Fecha de Nacimiento</string>
+    <string name="t6_mail">Email</string>
+    <string name="t7_descrip">Descripcion</string>
+    <string name="t8_nom">Nombre</string>
+    <string name="btn2">Editar Datos</string>
+    <string name="btn3">Confirmar</string>
+    <string name= "titulo2">Confirmar Datos</string>
+
+
+    <string name="Knombre">nombre</string>
+    <string name="KfechaN">fechaN</string>
+    <string name="Ktelefono">telefono</string>
+    <string name="Kmail">mail</string>
+    <string name="Kdescrip">descrip</string>
+
+    <string name="kdia">dia</string>
+    <string name="kmes">mes</string>
+    <string name="kanio">anio</string>
+
+    <string name="toast1"> Los datos han sido guardados con exito</string>
+
+</resources>
