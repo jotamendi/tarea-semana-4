@@ -44,12 +44,10 @@ public class mascotaAdapter extends RecyclerView.Adapter<mascotaAdapter.mascotaV
         holder.boneRate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (clicked == false){
-                    mascot.incRate();
-                    clicked = true;
-                    holder.rateTxt.setText(String.valueOf(mascot.getRate().toString()));
+                mascot.incRate();
+                clicked = true;
+                holder.rateTxt.setText(String.valueOf(mascot.getRate().toString()));
 
-                }
             }
         });
     }

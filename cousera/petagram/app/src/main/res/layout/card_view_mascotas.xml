@@ -11,6 +11,7 @@
     android:layout_marginHorizontal="@dimen/cv_horizontal_margin"
     cardview:cardCornerRadius="@dimen/corner_radius_cv"
 
+
     >
     <LinearLayout
         android:layout_height="match_parent"
