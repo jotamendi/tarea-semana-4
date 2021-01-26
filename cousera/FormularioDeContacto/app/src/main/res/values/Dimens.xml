@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
- <dimen name="padding_form_bottom">10dp</dimen>
- <dimen name="padding_form_sides">10dp</dimen>
- <dimen name="padding_form_top">10dp</dimen>
- <dimen name="btn_padding_form_top">30dp</dimen>
- <dimen name="padding_dp_bottom">5dp</dimen>
- <dimen name="tx_size_dp">20dp</dimen>
-</resources>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Petagram</string>
+    <string name="dog_name1">Rocky</string>
+    <string name="dog_rate">10</string>
+    <string name="tv1_id"> dogName</string>
+    <string name="tv2_id">dogRate</string>
+    <string name="imgB1_id">wBone</string>
+    <string name="imgB2_id">yBone</string>
+</resources>

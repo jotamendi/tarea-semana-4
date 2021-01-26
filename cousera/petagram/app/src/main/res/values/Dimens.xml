@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bottom_margin">10dp</dimen>
+    <dimen name="top_margin">5dp</dimen>
+    <dimen name ="cv_imgHeight">450dp</dimen>
+    <dimen name="corner_radius_cv">5dp</dimen>
+    <dimen name="cv_horizontal_margin">10dp</dimen>
+    <dimen name="button_size1">42dp</dimen>
+    <dimen name="button_size2">50dp</dimen>
+    <dimen name="text_size1">35dp</dimen>
+    <dimen name="margin_btn">5dp</dimen>
+    <dimen name="margin_txt">10dp</dimen>
+    <dimen name="extended_margin_txt">132dp</dimen>
+    <dimen name="actionBarElevation">4dp</dimen>
+    <dimen name ="dog_paw_size">48dp</dimen>
+    <dimen name ="star_size">50dp</dimen>
+   <dimen name="star_hor_margin">30dp</dimen>
+</resources>
