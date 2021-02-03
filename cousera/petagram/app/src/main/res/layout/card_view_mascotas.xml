@@ -31,54 +31,72 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <ImageButton
-                android:id="@+id/wBone"
-                android:layout_width="@dimen/button_size1"
-                android:layout_height="@dimen/button_size1"
-                android:layout_marginHorizontal="@dimen/margin_btn"
-                android:background="@mipmap/white_dog_bone"
-                android:scaleType="centerCrop"
-                android:layout_centerVertical="true"
-                >
+            android:layout_height="wrap_content"
+            android:background="@color/blue_prim">
 
-            </ImageButton>
+        <ImageButton
+            android:id="@+id/wBone"
+            android:layout_width="@dimen/button_size1"
+            android:layout_height="@dimen/button_size1"
+            android:layout_marginHorizontal="@dimen/margin_btn"
+            android:background="@mipmap/white_dog_bone"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            android:visibility="visible"
+            >
+        </ImageButton>
 
-            <TextView
-                android:id="@+id/dogName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/margin_txt"
-                android:text="@string/dog_name1"
-                android:textSize="@dimen/text_size1"
-                android:layout_toRightOf="@id/wBone">
+        <ImageButton
+            android:id="@+id/colorBone"
+            android:layout_width="@dimen/button_size1"
+            android:layout_height="@dimen/button_size1"
+            android:layout_marginHorizontal="@dimen/margin_btn"
+            android:background="@mipmap/color_dog_bone"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"
+            android:layout_toStartOf="@id/dogName"
+            android:layout_toLeftOf="@id/dogName">
+        </ImageButton>
 
-            </TextView>
+        <TextView
+            android:id="@+id/dogName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_txt"
+            android:text="@string/dog_name1"
+            android:textSize="@dimen/text_size1"
+            android:textColor="@color/primary_txt"
+            android:layout_toRightOf="@id/wBone">
 
-            <TextView
-                android:id="@+id/dogRate"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_marginRight="@dimen/margin_txt"
-                android:text="@string/dog_rate"
-                android:textSize="@dimen/text_size1"
-                android:layout_toLeftOf="@id/yBone">
 
-            </TextView>
+        </TextView>
 
-            <ImageButton
-                android:id="@+id/yBone"
-                android:layout_width="@dimen/button_size2"
-                android:layout_height="@dimen/button_size2"
-                android:layout_marginHorizontal="@dimen/margin_btn"
-                android:background="@mipmap/yellow_dog_bone"
-                android:scaleType="centerCrop"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:clickable="false">
+        <TextView
+            android:id="@+id/dogRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginRight="@dimen/margin_txt"
+            android:text="@string/dog_rate"
+            android:textSize="@dimen/text_size1"
+            android:textColor="@color/primary_txt"
+            android:layout_toLeftOf="@id/yBone">
 
-            </ImageButton>
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/yBone"
+            android:layout_width="@dimen/button_size2"
+            android:layout_height="@dimen/button_size2"
+            android:layout_marginHorizontal="@dimen/margin_btn"
+            android:background="@mipmap/yellow_dog_bone"
+            android:scaleType="centerCrop"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:clickable="false">
+
+        </ImageButton>
 
         </RelativeLayout>
 

@@ -6,7 +6,6 @@
     android:layout_height="?attr/actionBarSize"
     android:layout_width="match_parent"
     android:background="@color/blue_prim"
-    android:elevation="@dimen/actionBarElevation"
     android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
     app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
     <RelativeLayout
@@ -31,9 +30,7 @@
             android:textSize="@dimen/text_size1"
             android:textStyle="bold"
             android:layout_centerHorizontal="true"
-            android:textColor="@color/primary_txt"
-            >
-
+            android:textColor="@color/primary_txt">
         </TextView>
 
         <ImageButton
@@ -42,9 +39,8 @@
             android:layout_height="@dimen/star_size"
             android:src="@drawable/star_black"
             android:layout_alignParentRight="true"
-           android:layout_marginHorizontal="@dimen/star_hor_margin"
-            android:background="@color/blue_prim"
-            />
+            android:layout_marginLeft="@dimen/star_hor_margin"
+            android:background="@color/blue_prim" />
 
     </RelativeLayout>
 

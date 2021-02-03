@@ -1,6 +1,5 @@
-package com.jmdevs.petagram;
+package com.jmdevs.petagram.adapter;
 
-import android.bluetooth.BluetoothProfile;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,10 +7,12 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.jmdevs.petagram.R;
+import com.jmdevs.petagram.pojo.mascota;
 
 import java.util.ArrayList;
 
@@ -21,8 +22,9 @@ public class mascotaAdapter extends RecyclerView.Adapter<mascotaAdapter.mascotaV
     boolean clicked = false;
     private Context context;
 
-    public mascotaAdapter(ArrayList<mascota> mascotas){
+    public mascotaAdapter(ArrayList<mascota> mascotas, Context c){
         this.mascotas = mascotas;
+        context = c;
     }
 
     @NonNull
@@ -44,12 +46,27 @@ public class mascotaAdapter extends RecyclerView.Adapter<mascotaAdapter.mascotaV
         holder.boneRate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mascot.incRate();
-                clicked = true;
-                holder.rateTxt.setText(String.valueOf(mascot.getRate().toString()));
-
+                if(holder.boneRate.getVisibility() == View.VISIBLE){
+                    mascot.incRate();
+                    holder.rateTxt.setText(String.valueOf(mascot.getRate().toString()));
+                    holder.boneRate.setVisibility(view.INVISIBLE);
+                    holder.boneUnrate.setVisibility(view.VISIBLE);
+                }
             }
         });
+
+        holder.boneUnrate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(holder.boneUnrate.getVisibility() == view.VISIBLE){
+                    mascot.decRate();
+                    holder.rateTxt.setText(String.valueOf(mascot.getRate().toString()));
+                    holder.boneRate.setVisibility(view.VISIBLE);
+                    holder.boneUnrate.setVisibility(view.INVISIBLE);
+                }
+            }
+        });
+
     }
 
     @Override
@@ -64,6 +81,7 @@ public class mascotaAdapter extends RecyclerView.Adapter<mascotaAdapter.mascotaV
         private TextView nameTxt;
         private TextView rateTxt;
         private ImageButton boneRate;
+        private ImageButton boneUnrate;
 
             public mascotaViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -71,6 +89,7 @@ public class mascotaAdapter extends RecyclerView.Adapter<mascotaAdapter.mascotaV
                 nameTxt     = (TextView) itemView.findViewById(R.id.dogName);
                 rateTxt     = (TextView) itemView.findViewById(R.id.dogRate);
                 boneRate    = (ImageButton) itemView.findViewById(R.id.wBone);
+                boneUnrate  = (ImageButton) itemView.findViewById(R.id.colorBone);
         }
     }
 

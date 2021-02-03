@@ -1,4 +1,4 @@
-package com.jmdevs.petagram;
+package com.jmdevs.petagram.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -6,6 +6,10 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+
+import com.jmdevs.petagram.R;
+import com.jmdevs.petagram.adapter.mascotaAdapter;
+import com.jmdevs.petagram.pojo.mascota;
 
 import java.util.ArrayList;
 
@@ -34,18 +38,18 @@ public class ultimos5Fav extends AppCompatActivity {
     }
 
     public void initAdapter(){
-        mascotaAdapter mAdapt = new mascotaAdapter(mascotas2);
+        mascotaAdapter mAdapt = new mascotaAdapter(mascotas2, this);
         listaMascotas2.setAdapter(mAdapt);
     }
 
     public void initListaMascotas2(){
         mascotas2 = new ArrayList<mascota>();
 
-        mascota m1 = new mascota("Rocky", 0, R.drawable.bull_terrier);
-        mascota m2 = new mascota("Bobby", 0, R.drawable.pitbull_cachorro);
-        mascota m3 = new mascota("Rudolph", 0, R.drawable.doberman_cachorro);
-        mascota m4 = new mascota("Scott", 0, R.drawable.rottweiler_cachorro);
-        mascota m5 = new mascota("Lucky", 0, R.drawable.golden_retriever);
+        mascota m1 = new mascota("Rocky","Rocky", 0, R.drawable.bull_terrier);
+        mascota m2 = new mascota("Bobby","Bobby", 0, R.drawable.pitbull_cachorro);
+        mascota m3 = new mascota("Rudolph","Rudolph", 0, R.drawable.doberman_cachorro);
+        mascota m4 = new mascota("Scott","Scott", 0, R.drawable.rottweiler_cachorro);
+        mascota m5 = new mascota("Lucky","Lucky", 0, R.drawable.golden_retriever);
 
         m1.incRate();
         m2.incRate();

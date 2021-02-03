@@ -1,23 +1,36 @@
-package com.jmdevs.petagram;
+package com.jmdevs.petagram.pojo;
 
-import android.media.Image;
+import com.jmdevs.petagram.pojo.post;
+
+import java.util.ArrayList;
 
 public class mascota {
 
+    private String id_pet;
     private String nombre;
     private Integer edad;
     private int pic;
     private String descripcion;
     private Integer rate;
+    private ArrayList<post> posts;
 
-    public mascota(String nom, Integer ed, int img){
+    public mascota(String id, String nom, Integer ed, int img){
+        id_pet = id;
         nombre = nom;
         edad = ed;
         pic = img;
         rate = 0;
         descripcion = "---";
+        posts = new ArrayList<>();
     }
 
+    public String getId_pet() {
+        return id_pet;
+    }
+
+    public void setId_pet(String id_pet) {
+        this.id_pet = id_pet;
+    }
     public String getNombre() {
         return nombre;
     }
@@ -64,6 +77,14 @@ public class mascota {
 
     public void decRate(){
         rate = rate - 1;
+    }
+
+    public ArrayList<post> getPosts() {
+        return posts;
+    }
+
+    public void addPosts(post p) {
+        posts.add(p);
     }
 
 }

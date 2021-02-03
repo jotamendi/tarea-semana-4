@@ -20,7 +20,7 @@
             android:scaleType="centerCrop"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
-            android:layout_marginHorizontal="@dimen/star_hor_margin">
+            android:layout_marginHorizontal="@dimen/paw_hor_margin">
         </ImageView>
 
         <TextView
